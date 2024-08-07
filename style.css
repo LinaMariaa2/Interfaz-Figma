@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/*Para Importar las 2 fuentes  */
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+.header{
+    padding: 2% 0% 0% 15%
+}
+
+.header__Navegador{
+    display:flex;
+    gap: 80px;
+}
+
+.header__Navegador__link{
+    font-family:'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22D4FD;
+}
+
+.presentacion {
+    padding: 6% 15%; /*Primer valor para ancho/ segundo valor para altura */
+    display: flex;/*de manera horizontal */
+    align-items: center;
+    justify-content: space-between;/*Espacio entre contenidos */
+}
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex; /*de manera horizontal*/
+    flex-direction: column;/* pero tipo columna */
+    gap: 40px; /*Espaciado entre filas y columnas  */
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque {
+    color: #22D4FD; ;
+}
+
+.presentacion__contenido__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentacion__enlaces_subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    font-weight: 400px;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__link{
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600; /* grosor de la letra */
+    padding: 21.5px 0; /*relleno */
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #22D4FD
+}
+.presentacion__enlaces__link:hover{
+    background-color: #272727;
+}
+.presentacion__enlaces__link img {
+    width: 28px; 
+    height: 28px; 
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    border-radius: 40px;
+}
+
+.footer{
+    background-color: #22D4FD;
+    padding: 24px ;
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+
+}
