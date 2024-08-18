@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 /*Para Importar las 2 fuentes  */
+:root{
+    --color-primario:#D6EFD8;
+    --color-secundario: #80AF81;
+    --color-terciario:#508D4E;
+    --color-cuarto:#1A5319;
+
+    --fuente-monserrate:'Montserrat', sans-serif;;
+    --fuente-krona:'krona one', sans-serif;
+
+}
+
 * {
     padding: 0;
     margin:0;
@@ -7,8 +18,8 @@
 
 body{
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
 }
 .header{
     padding: 2% 0% 0% 15%
@@ -20,10 +31,11 @@ body{
 }
 
 .header__Navegador__link{
-    font-family:'Montserrat', sans-serif;
+    font-family:var(--fuente-monserrate);
     font-size: 24px;
     font-weight: 600;
-    color:#22D4FD;
+    color: var(--color-terciario);
+    text-decoration: none;
 }
 
 .presentacion {
@@ -46,16 +58,16 @@ body{
 }
 
 .titulo-destaque {
-    color: #22D4FD; ;
+    color:var(--color-terciario) ;
 }
 
 .presentacion__contenido__texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-monserrate);
 }
 
 .presentacion__enlaces_subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;
     font-weight: 400px;
 }
@@ -76,12 +88,12 @@ body{
     font-weight: 600; /* grosor de la letra */
     padding: 21.5px 0; /*relleno */
     text-decoration: none;
-    color: #F6F6F6;
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD
+    color: var(--color-secundario);
+    font-family: var(--fuente-monserrate);
+    border: 2px solid var(--color-terciario);
 }
 .presentacion__enlaces__link:hover{
-    background-color: #272727;
+    background-color:var(--color-cuarto);
 }
 .presentacion__enlaces__link img {
     width: 28px; 
@@ -92,13 +104,15 @@ body{
 }
 
 .footer{
-    background-color: #22D4FD;
+    background-color:var(--color-terciario);
     padding: 24px ;
-    color: #000000;
+    color: var(--color-primario);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fuente-monserrate);
     font-size: 24px;
     font-weight: 400;
-
-
+}
+.presentacion__contenido__texto a{
+    text-decoration: none;
+    color: var(--color-terciario);
 }
